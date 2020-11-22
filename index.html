@@ -1,0 +1,90 @@
+<html>
+
+<script src="javascript/jquery-3.5.1.min.js"></script>
+
+<title>LEAD ARCHITECTURE</title>
+<meta charset="UTF-8">
+<meta name="description" content="LEAD ARCHITECTURE">
+<meta name="keywords" content="LEAD ARCHITECTURE">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+.background {
+          width: 100%;
+	        height: 100%;
+	        position: absolute;
+	        top: 0;
+	        left: 0;
+	        background-color: #ffffff;
+	        display:flex;
+	        justify-content: center;
+	        align-items: center;
+	        z-index: 5000;
+}
+
+.box {
+          display: inline-block;
+          width: 854px;
+          height: 480px;
+          position: relative;
+}
+
+.image {
+          display: block;
+          width: 100%;
+          height: 100%;
+          background-image: url(logo/wallpaper.png);
+}
+
+.elementToFadeIn {
+          -webkit-animation: animationName 5s;
+          -moz-animation: animationName 5s;
+          -o-animation: animationName 5s;
+          animation: animationName 5s;
+}
+
+@keyframes animationName {
+  0%   { opacity:0; }
+  10%   { opacity:0; }
+  100% { opacity:1; }
+}
+
+@-o-keyframes animationName{
+  0%   { opacity:0; }
+  10%   { opacity:0; }
+  100% { opacity:1; }
+}
+
+@-moz-keyframes animationName{
+  0%   { opacity:0; }
+  10%   { opacity:0; }
+  100% { opacity:1; }
+}
+
+@-webkit-keyframes animationName{
+  0%   { opacity:0; }
+  10%   { opacity:0; }
+  100% { opacity:1; }
+}
+</style>
+
+<body>
+  <div class="background">
+      <div class="box">
+          <a href="home.html" class="image elementToFadeIn"></a>
+      </div>
+  </div>
+</body>
+
+<script>
+$('a').click(function(e) {
+e.preventDefault();
+newLocation = this.href;
+$('body').fadeOut(1000, newpage);
+});
+function newpage() {
+window.location = newLocation;
+}
+</script>
+
+</html>
