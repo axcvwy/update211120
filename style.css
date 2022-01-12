@@ -3475,7 +3475,7 @@ a:hover .homeGrid_arrow {
 
 .modNew_imgs img:hover {
 	filter: grayscale(25%);
-	transform: scale(1.025);
+	transform: scale(1);
 }
 
 
